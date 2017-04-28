@@ -7,16 +7,18 @@
 	android:orientation="vertical">
 
 	<Button
-		android:layout_height="wrap_content"
+		android:layout_height="35dp"
 		android:layout_width="wrap_content"
-		android:text="Button"/>
+		android:text="Run!"
+		android:onClick="iii"/>
 
 	<EditText
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
 		android:ems="10"
 		android:id="@+id/mainEditText1"
-		android:text="2870"/>
+		android:text="2870"
+		android:visibility="gone"/>
 
 	<TextView
 		android:text="@string/hello_world"
@@ -24,8 +26,9 @@
 		android:layout_height="300dp"
 		android:textSize="7sp"
 		android:id="@+id/mainTextView1"
-		android:gravity="left|center"
-		android:typeface="monospace"/>
+		android:gravity="center"
+		android:typeface="monospace"
+		android:background="#FCFCFC"/>
 
 </LinearLayout>
 

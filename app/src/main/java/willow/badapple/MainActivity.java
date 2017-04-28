@@ -6,6 +6,7 @@ import android.os.*;
 import java.io.*;
 import android.widget.*;
 import android.media.*;
+import android.view.*;
 
 public class MainActivity extends Activity 
 {String a,b;
@@ -27,10 +28,10 @@ TextView t;
 		{}
 		catch (IllegalStateException e)
 		{}
-		mp.start();
+		
 		t = (TextView)this.findViewById(R.id.mainTextView1);
 	et=(EditText)this.findViewById(R.id.mainEditText1);
-		h.postDelayed(r,1);
+		
     }
 	public static String readAssetsTxt(Context context,String fileName){
         try {
@@ -75,7 +76,7 @@ TextView t;
 		//t.setText(a);
 		int hh=Integer.valueOf(et.getText().toString(),10);
 		if(c<=6560){
-		t.setText(b.substring(c*hh,(c+1)*hh)+"\n"+c+"/"+b.length());
+		t.setText(b.substring(c*hh,(c+1)*hh)+"\n"+c+"/"+"6560");
 		}
 		c=c+1;
 			h.postDelayed(r,16);
@@ -102,5 +103,8 @@ TextView t;
 		mp.stop();
 		mp.reset();
 	}
-	
+	public void iii(View v){
+		mp.start();
+		h.postDelayed(r,1);
+	}
 }
